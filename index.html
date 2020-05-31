@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SpaceX Fight</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/icon/icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#333">
+  </head>
+  <body>
+    <div id='cont'>
+      <div class='top-info'>
+        <div id='lives'>
+          <img src='images/life.png'>
+          <img src='images/life.png'>
+          <img src='images/life.png'>
+        </div>
+        <div class='info-level'>
+          LEVEL
+          <div id='info_level'>1</div>
+        </div>
+        <div id='mute'>MUTE</div>
+        <a class='github' href='https://github.com/rajan-savaliya/spacex-game' target='_blank'>GITHUB</a>
+      </div>
+      <div id='intro'>
+        <div class='controls'>
+          <img src='images/keys.png'>
+          <div class='space'>Shoot with spacebar</div>
+          <div class='arrows'>Move with arrow keys</div>
+        </div>
+        <div class='start'>Press space to start</div>
+      </div>
+      <div id='loading'>
+        <div class='title'>loading...</div>
+      </div>
+      <div id='game_over'>
+        <div class='bg'></div>
+        <div class='center'>
+          <div class='title'>GAME OVER</div>
+          <div class='continue'>Press space to continue</div>
+        </div>
+      </div>
+      <div id='levelup'>
+        <div class='bg'></div>
+        <div class='title'>
+          LEVEL
+          <div id='ingame_level'>1</div>
+        </div>
+      </div>
+      <canvas height='500' id='game_screen' width='1000'>
+        Your browser does not support canvas technology. Please try again with a different browser.
+      </canvas>
+    </div>
+    <script src='sw-start.js'></script>
+    <script src='sounds/howler.js'></script>
+    <script src='script.js'></script>
+  </body>
+</html>
